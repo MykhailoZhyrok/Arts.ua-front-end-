@@ -1,0 +1,102 @@
+.navbar {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border: black;
+    transition: background-color 0.3s; /* Додано анімацію для плавного переходу */
+}
+
+.navbar:not(.mobile):hover {
+    background-color: rgba(48, 45, 45, 0.477);
+}
+
+.navbar:not(.mobile):hover .ulNav {
+    display: flex;
+    
+}
+
+.navbar:not(.mobile):hover .bascket {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    
+}
+
+.navbar:not(.mobile):hover .bascketIcon {
+    max-width: 33px
+}
+
+.blockNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulNav {
+    display: none;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    padding: 40px;
+    font-size: 20px;
+}
+
+.bascketIcon {
+    max-width: 40px;
+}
+
+.bascket {
+    z-index: 3;
+    right: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: absolute; 
+    transition: none;
+    
+}
+
+@media (max-width: 768px) {
+    .navbar.mobile:hover {
+        background-color: rgba(48, 45, 45, 0.477);
+    }
+
+    .linkNav {
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .burgerIcon {
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .liNav{
+        margin-bottom: 10px;
+    }
+    .ulNav {
+        display: none;
+        justify-content: space-between;
+        margin: 0 auto;
+        list-style-type: none;
+        flex-grow: 1;
+    }
+
+    .burgerIcon {
+        margin-right: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+}

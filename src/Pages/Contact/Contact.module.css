@@ -1,0 +1,41 @@
+.base{
+
+    background-image: url('../../img_ref/back4.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 20%;
+    z-index: 1;
+    justify-content: center;
+
+}
+
+.collectBox{
+    display: block;
+    text-align: center;
+    width: 100%; 
+    padding: 40px 40px 40px 0;
+
+    
+    
+}
+
+@media (max-width: 1140px) {
+.box{
+    flex-direction: column;
+}
+}
+@media (max-width: 1140px) {
+    .collectBox{
+      font-size: 10px;
+    }
+    }

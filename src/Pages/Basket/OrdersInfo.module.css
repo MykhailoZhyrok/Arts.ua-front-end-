@@ -1,0 +1,49 @@
+.box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 3%;
+    z-index: 1;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.errorMsg{
+    color: red;
+}
+
+.collectBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    max-height: 717px;
+    border-radius: 25px;
+    padding: 40px;
+    justify-content: space-between;
+    background-color: #1b0e0eb3;
+    
+}
+
+.myInfo{
+    display: block;
+    padding: 10px;
+    
+}
+
+.inputClit{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    color: rgb(255, 0, 221);
+    background-color: rgb(154, 242, 255);
+    
+}
+.inputClit::placeholder {
+    color: #ffffff; 
+  }
